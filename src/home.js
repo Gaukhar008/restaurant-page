@@ -32,7 +32,35 @@ const createHeader = () => {
   headerRight.appendChild(menu);
   header.appendChild(headerLeft);
   header.appendChild(headerRight);
+
   container.appendChild(header);
 };
 
-export { createHeader };
+const createMain = () => {
+  const main = document.createElement('main');
+  const mainContent = document.createElement('div');
+  mainContent.classList.add('main-content');
+  const messageTitle = document.createElement('p');
+  messageTitle.classList.add('message-title');
+  messageTitle.textContent = 'Anyong Haseyo!';
+  const message = document.createElement('p');
+  message.classList.add('message');
+  message.textContent = 'Visit Us and Experience Authentic Korean Cuisine & Genuine Hospitality at its Best!';
+
+  mainContent.appendChild(messageTitle);
+  mainContent.appendChild(message);
+  main.appendChild(mainContent);
+
+  container.appendChild(main);
+};
+
+const createFooter = () => {
+  const footer = document.createElement('footer');
+  const copyright = document.createElement('p');
+  copyright.textContent = 'K-WOK Cafe © 2022 | All Rights Reserved';
+  footer.appendChild(copyright);
+
+  container.appendChild(footer);
+};
+
+export { createHeader, createMain, createFooter };

@@ -1,5 +1,7 @@
 import 'normalize.css';
 import './style.scss';
-import { createHeader } from './home';
+import { createHeader, createMain, createFooter } from './home';
 
 createHeader();
+createMain();
+createFooter();
