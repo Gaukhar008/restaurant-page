@@ -16,6 +16,10 @@ const createHeader = () => {
   headerRight.classList.add('header__right');
   restaurantName.classList.add('restaurant-name');
   menu.classList.add('menu');
+  home.classList.add('menu__item');
+  restaurantMenu.classList.add('menu__item');
+  about.classList.add('menu__item');
+  contact.classList.add('menu__item');
 
   h1.textContent = 'K-WOK Cafe';
   home.textContent = 'Home';
@@ -33,7 +37,7 @@ const createHeader = () => {
   header.appendChild(headerLeft);
   header.appendChild(headerRight);
 
-  container.appendChild(header);
+  return header;
 };
 
 const createMain = () => {
@@ -51,7 +55,7 @@ const createMain = () => {
   mainContent.appendChild(message);
   main.appendChild(mainContent);
 
-  container.appendChild(main);
+  return main;
 };
 
 const createFooter = () => {
@@ -60,7 +64,26 @@ const createFooter = () => {
   copyright.textContent = 'K-WOK Cafe © 2022 | All Rights Reserved';
   footer.appendChild(copyright);
 
-  container.appendChild(footer);
+  return footer;
 };
 
-export { createHeader, createMain, createFooter };
+function setActiveButton(button) {
+  const buttons = document.querySelectorAll('.menu__item');
+
+  buttons.forEach(() => {
+    if (button !== this) {
+      button.classList.remove('active');
+    }
+  });
+  button.classList.add('active');
+}
+
+function loadHomePage() {
+  container.appendChild(createHeader());
+  container.appendChild(createMain());
+  container.appendChild(createFooter());
+
+  setActiveButton(document.querySelector('.menu__item'));
+}
+
+export default loadHomePage;

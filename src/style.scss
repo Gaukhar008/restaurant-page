@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(./background-image.jpg);
+    background-image: url(./images/background-image.jpg);
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -33,7 +33,6 @@ header {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     background-color: rgba(0, 0, 0, 0.6);
-    height: 80px;
 
     .restaurant-name {
         padding-left: 60px;
@@ -54,6 +53,7 @@ main {
         flex-direction: column;
         text-align: center;
         background-color: rgba(0, 0, 0, 0.6);
+        gap: 20px;
         .message-title {
             font-size: 100px;
             color: white;
@@ -78,4 +78,8 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     font-size: 15px;
+}
+
+.active {
+    border-bottom: 2px solid yellow;
 }
