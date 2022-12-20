@@ -43,7 +43,7 @@ const createHeader = () => {
 const createMain = () => {
   const main = document.createElement('main');
   const mainContent = document.createElement('div');
-  mainContent.classList.add('main-content');
+  mainContent.classList.add('home-content');
   const messageTitle = document.createElement('p');
   messageTitle.classList.add('message-title');
   messageTitle.textContent = 'Anyong Haseyo!';
@@ -86,4 +86,4 @@ function loadHomePage() {
   setActiveButton(document.querySelector('.menu__item'));
 }
 
-export default loadHomePage;
+export { loadHomePage, createHeader, createFooter };

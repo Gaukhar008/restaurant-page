@@ -9,7 +9,7 @@
 }
 
 body {
-    background-image: url(./images/background-image.jpg);
+    background-image: url(../images/background-image.jpg);
     background-attachment:fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -82,4 +82,33 @@ footer {
 
 .active {
     border-bottom: 2px solid yellow;
+}
+
+.menu-item_image {
+    width: 400px;
+    height: 300px;
+}
+
+.menu-content {
+    display: flex;
+    justify-content: center;
+
+    .restaurant-menu {
+        width: 80%;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.6);
+        color: white;
+        h1 {
+            font-size: 50px;
+            margin: 0;
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+        .restaurant-menu__block {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 20px;
+        }
+
+}
 }
