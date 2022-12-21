@@ -1,3 +1,5 @@
+import { createHeader, createFooter } from './init';
+
 const container = document.getElementById('content');
 
 function addMenuItem(name, description, imgLocation) {
@@ -165,12 +167,15 @@ function createMenu() {
 }
 
 function loadMenuPage() {
+  container.innerHTML = '';
   const main = document.createElement('main');
   main.classList.add('menu-content');
   main.textContent = '';
   main.appendChild(createMenu());
 
+  container.appendChild(createHeader());
   container.appendChild(main);
+  container.appendChild(createFooter());
 }
 
 export default loadMenuPage;
