@@ -1,7 +1,3 @@
-import { createHeader, createFooter } from './init';
-
-const container = document.getElementById('content');
-
 function addMenuItem(name, description, imgLocation) {
   const menuItem = document.createElement('div');
   menuItem.classList.add('menu-item');
@@ -27,6 +23,8 @@ function addMenuItem(name, description, imgLocation) {
 }
 
 function createMenu() {
+  const menuContent = document.createElement('div');
+  menuContent.classList.add('menu-content');
   const menu = document.createElement('div');
   menu.classList.add('restaurant-menu');
 
@@ -162,20 +160,15 @@ function createMenu() {
     ),
   );
   menu.appendChild(dessertsBlock);
+  menuContent.appendChild(menu);
 
-  return menu;
+  return menuContent;
 }
 
 function loadMenuPage() {
-  container.innerHTML = '';
-  const main = document.createElement('main');
-  main.classList.add('menu-content');
+  const main = document.querySelector('main');
   main.textContent = '';
   main.appendChild(createMenu());
-
-  container.appendChild(createHeader());
-  container.appendChild(main);
-  container.appendChild(createFooter());
 }
 
 export default loadMenuPage;

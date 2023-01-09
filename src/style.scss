@@ -38,19 +38,23 @@ header {
         padding-left: 60px;
         color: white;
     }
-    .menu {
+    nav {
         display: flex;
         justify-content: space-around;
         padding-left: 60px;
         padding-right: 60px;
         color: white;
         gap: 20px;
-        .menu__item {
+        .nav__item {
             background: none;
             border: none;
             color: white;
             font-size: 30px;
             cursor: pointer;
+        }
+        
+        .active {
+            border-bottom: 2px solid yellow;
         }
     }
 }
@@ -88,10 +92,6 @@ footer {
     background-color: rgba(0, 0, 0, 0.6);
     color: white;
     font-size: 15px;
-}
-
-.active {
-    border-bottom: 2px solid yellow;
 }
 
 .menu-item_image {

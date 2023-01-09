@@ -1,7 +1,3 @@
-import { createHeader, createFooter } from './init';
-
-const container = document.getElementById('content');
-
 const createMain = () => {
   const mainContent = document.createElement('div');
   mainContent.classList.add('home-content');
@@ -19,13 +15,9 @@ const createMain = () => {
 };
 
 function loadHomePage() {
-  container.innerHTML = '';
-  const main = document.createElement('main');
+  const main = document.querySelector('main');
+  main.textContent = '';
   main.appendChild(createMain());
-
-  container.appendChild(createHeader());
-  container.appendChild(main);
-  container.appendChild(createFooter());
 }
 
 export default loadHomePage;
