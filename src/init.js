@@ -74,6 +74,9 @@ const createHeader = () => {
   restaurantName.classList.add('restaurant-name');
 
   h1.textContent = 'K-WOK Cafe';
+  h1.addEventListener('click', () => {
+    loadHomePage();
+  });
 
   restaurantName.appendChild(h1);
   headerLeft.appendChild(restaurantName);

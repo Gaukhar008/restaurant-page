@@ -39,6 +39,10 @@ header {
         color: white;
     }
 
+    h1 {
+        cursor: pointer;
+    }
+
     nav {
         display: flex;
         justify-content: space-around;
@@ -53,6 +57,11 @@ header {
             color: white;
             font-size: 30px;
             cursor: pointer;
+        }
+
+        .nav__item:hover {
+            border-bottom: 2px solid yellow;
+            transition: .2s;
         }
 
         .active {
@@ -101,6 +110,13 @@ footer {
     width: 400px;
     height: 300px;
 }
+
+.menu-item_image:hover {
+    width: 420px;
+    height: 320px;
+    transition: .2s ease-in-out;
+}
+
 
 .menu-content {
     padding-top: 120px;
@@ -184,7 +200,7 @@ footer {
             img:hover {
                 width: 520px;
                 height: 320px;
-                transition: .2s ease-in-out;;
+                transition: .2s ease-in-out;
             }
         }
     }
