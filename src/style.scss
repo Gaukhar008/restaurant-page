@@ -205,3 +205,41 @@ footer {
         }
     }
 }
+
+.contacts {
+    display: flex;
+    justify-content: center;
+    margin-top: 120px;
+    margin-bottom: 60px;
+    .contacts__wrapper {
+        padding: 30px;
+        width: 700px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 30px;
+        color: white;
+        background-color: rgba(0, 0, 0, 0.6);
+
+        h1 {
+            margin: 0;
+            border-bottom: 2px solid yellow;
+        }
+
+        h2 {
+            margin: 0;
+            border-bottom: 2px solid yellow;
+        }
+
+        .contacts__location-img {
+            width: 500px;
+            height: auto;
+        }
+
+        .contacts__social-networks {
+            display: flex;
+            gap: 30px;
+        }
+    }
+}

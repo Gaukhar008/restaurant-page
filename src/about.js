@@ -1,4 +1,4 @@
-const createAbout = () => {
+const createAboutPage = () => {
   const aboutContent = document.createElement('div');
   aboutContent.classList.add('about');
   const aboutWrapper = document.createElement('div');
@@ -16,7 +16,7 @@ const createAbout = () => {
 
   const descriptionFirst = document.createElement('p');
   descriptionFirst.classList.add('about__highlight-description');
-  descriptionFirst.textContent = 'With many years of experiences, Hansang Korean serves authentic and delicious korean food with variety to leave a memorable dining experience.';
+  descriptionFirst.textContent = 'With many years of experiences, K-WOK serves authentic and delicious korean food with variety to leave a memorable dining experience.';
 
   const firstImg = document.createElement('img');
   firstImg.classList.add('about__highlight-img');
@@ -64,7 +64,7 @@ const createAbout = () => {
 function loadAboutPage() {
   const main = document.querySelector('main');
   main.textContent = '';
-  main.appendChild(createAbout());
+  main.appendChild(createAboutPage());
 }
 
 export default loadAboutPage;

@@ -2,6 +2,7 @@ import loadHomePage from './home';
 // eslint-disable-next-line import/no-cycle
 import loadMenuPage from './menu';
 import loadAboutPage from './about';
+import loadContactsPage from './contacts';
 
 function setActiveButton(button) {
   const buttons = document.querySelectorAll('.nav__item');
@@ -51,7 +52,7 @@ const createHeaderNav = () => {
   contactsButton.addEventListener('click', (e) => {
     if (e.target.classList.contains('active')) return;
     setActiveButton(contactsButton);
-    // тут должна быть функция для загрузки страницы About
+    loadContactsPage();
   });
 
   nav.appendChild(homeButton);
