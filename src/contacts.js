@@ -8,7 +8,7 @@ const createContactsPage = () => {
   h1Location.textContent = 'OUR LOCATION';
   const map = document.createElement('img');
   map.classList.add('contacts__location-img');
-  map.src = '../images/map.png';
+  map.src = '../dist/images/map.png';
   map.alt = 'Location of cafe on map';
   const h3 = document.createElement('h3');
   h3.textContent = '+ 7 778 555 55 55 | kwokcafe@gmail.com';
@@ -21,21 +21,21 @@ const createContactsPage = () => {
   const facebookLink = document.createElement('a');
   facebookLink.href = 'https://www.facebook.com/';
   const facebookIcon = document.createElement('img');
-  facebookIcon.src = '../images/facebook_icon.svg';
+  facebookIcon.src = '../dist/images/facebook_icon.svg';
   facebookIcon.alt = 'Location of cafe on map';
   facebookLink.appendChild(facebookIcon);
 
   const instagramLink = document.createElement('a');
   instagramLink.href = 'https://www.instagram.com/';
   const instagramIcon = document.createElement('img');
-  instagramIcon.src = '../images/instagram_icon.svg';
+  instagramIcon.src = '../dist/images/instagram_icon.svg';
   instagramIcon.alt = 'Location of cafe on map';
   instagramLink.appendChild(instagramIcon);
 
   const tiktokLink = document.createElement('a');
   tiktokLink.href = 'https://www.tiktok.com/';
   const tiktokIcon = document.createElement('img');
-  tiktokIcon.src = '../images/tiktok_icon.svg';
+  tiktokIcon.src = '../dist/images/tiktok_icon.svg';
   tiktokIcon.alt = 'Location of cafe on map';
   tiktokLink.appendChild(tiktokIcon);
 
