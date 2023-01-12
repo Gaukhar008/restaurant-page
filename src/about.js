@@ -20,7 +20,7 @@ const createAboutPage = () => {
 
   const firstImg = document.createElement('img');
   firstImg.classList.add('about__highlight-img');
-  firstImg.src = '../dist/images/about_image-first.png';
+  firstImg.src = './images/about_image-first.png';
   firstImg.alt = 'Image of restaurant interior';
 
   firstHighlightText.appendChild(titleFirst);
@@ -35,7 +35,7 @@ const createAboutPage = () => {
 
   const secondImg = document.createElement('img');
   secondImg.classList.add('about__highlight-img');
-  secondImg.src = '../dist/images/about_image-second.png';
+  secondImg.src = './images/about_image-second.png';
   secondImg.alt = 'Image of food';
 
   const secondHighlightText = document.createElement('div');
