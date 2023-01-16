@@ -8,7 +8,7 @@ const createContactsPage = () => {
   h1Location.textContent = 'OUR LOCATION';
   const map = document.createElement('img');
   map.classList.add('contacts__location-img');
-  map.src = '../dist/images/map.png';
+  map.src = 'images/map.png';
   map.alt = 'Location of cafe on map';
   const h3 = document.createElement('h3');
   h3.textContent = '+ 7 778 555 55 55 | kwokcafe@gmail.com';
