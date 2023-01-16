@@ -37,28 +37,28 @@ function createMenu() {
     addMenuItem(
       'CHILLI CHICKEN',
       'Crunchy Korean fried chicken with Chilli',
-      '../dist/images/chilli_chicken.png',
+      'images/chilli_chicken.png',
     ),
   );
   mainDishesBlock.appendChild(
     addMenuItem(
       'SAM GYE TANG',
       'Korean Traditional Fresh Farm Full Chicken with Ginseng',
-      '../dist/images/sam_gye_tang.png',
+      'images/sam_gye_tang.png',
     ),
   );
   mainDishesBlock.appendChild(
     addMenuItem(
       'HAEMUL RAMYUN',
       'Ramen with Seafood',
-      '../dist/images/haemyl_ramyun.png',
+      'images/haemyl_ramyun.png',
     ),
   );
   mainDishesBlock.appendChild(
     addMenuItem(
       'JJAJANGMYEON',
       'Noodles in Black Beans Sauce',
-      '../dist/images/jjajangmyun.png',
+      'images/jjajangmyun.png',
     ),
   );
   menu.appendChild(mainDishesBlock);
@@ -72,28 +72,28 @@ function createMenu() {
     addMenuItem(
       'DUBU HOT POT',
       'Spicy Tofu Hot Pot',
-      '../dist/images/dubu_hotpot.png',
+      'images/dubu_hotpot.png',
     ),
   );
   soupsBlock.appendChild(
     addMenuItem(
       'YUKGAEJANG',
       'Spicy Beef and Vegetables Soup',
-      '../dist/images/yukgaejang.png',
+      'images/yukgaejang.png',
     ),
   );
   soupsBlock.appendChild(
     addMenuItem(
       'GALBI TANG',
       'Beef Short Ribs Soup',
-      '../dist/images/galbi_tang.png',
+      'images/galbi_tang.png',
     ),
   );
   soupsBlock.appendChild(
     addMenuItem(
       'TTUKBAEGI BULGOGI',
       'Marinated Beef in a Pot',
-      '../dist/images/ttukbaegi_bulgogi.png',
+      'images/ttukbaegi_bulgogi.png',
     ),
   );
   menu.appendChild(soupsBlock);
@@ -107,14 +107,14 @@ function createMenu() {
     addMenuItem(
       'TTEOKBOKKI',
       'Stir-fried Rice Cakes in Hot Chili Paste',
-      '../dist/images/tteokbokki.png',
+      'images/tteokbokki.png',
     ),
   );
   sauceBasedDishesBlock.appendChild(
     addMenuItem(
       'OJINGEO STIR-FRY',
       'Stir-fried Squid in Spicy Sauce',
-      '../dist/images/ojingeo_stir-fry.png',
+      'images/ojingeo_stir-fry.png',
     ),
   );
   menu.appendChild(sauceBasedDishesBlock);
@@ -128,14 +128,14 @@ function createMenu() {
     addMenuItem(
       'MUL NAENGMYUN',
       'Cold Buckwheat Noodles',
-      '../dist/images/mul_naengmyun.png',
+      'images/mul_naengmyun.png',
     ),
   );
   noodlesBlock.appendChild(
     addMenuItem(
       'JAPCHAE',
       'Stir-fried Sweet Potato Noodles and Vegetables',
-      '../dist/images/japchae.png',
+      'images/japchae.png',
     ),
   );
   menu.appendChild(noodlesBlock);
@@ -149,14 +149,14 @@ function createMenu() {
     addMenuItem(
       'TRADITIONAL BINGSU',
       'Crunchy shaved ice topped with sweet red beans',
-      '../dist/images/traditional_bingsu.png',
+      'images/traditional_bingsu.png',
     ),
   );
   dessertsBlock.appendChild(
     addMenuItem(
       'CARAMEL BINGSU',
       'Crunchy shaved ice topped with sweet red beans, caramel, and coconut',
-      '../dist/images/caramel_bingsu.png',
+      'images/caramel_bingsu.png',
     ),
   );
   menu.appendChild(dessertsBlock);

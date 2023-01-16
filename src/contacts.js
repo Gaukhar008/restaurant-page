@@ -21,21 +21,21 @@ const createContactsPage = () => {
   const facebookLink = document.createElement('a');
   facebookLink.href = 'https://www.facebook.com/';
   const facebookIcon = document.createElement('img');
-  facebookIcon.src = '../dist/images/facebook_icon.svg';
+  facebookIcon.src = 'images/facebook_icon.svg';
   facebookIcon.alt = 'Location of cafe on map';
   facebookLink.appendChild(facebookIcon);
 
   const instagramLink = document.createElement('a');
   instagramLink.href = 'https://www.instagram.com/';
   const instagramIcon = document.createElement('img');
-  instagramIcon.src = '../dist/images/instagram_icon.svg';
+  instagramIcon.src = 'images/instagram_icon.svg';
   instagramIcon.alt = 'Location of cafe on map';
   instagramLink.appendChild(instagramIcon);
 
   const tiktokLink = document.createElement('a');
   tiktokLink.href = 'https://www.tiktok.com/';
   const tiktokIcon = document.createElement('img');
-  tiktokIcon.src = '../dist/images/tiktok_icon.svg';
+  tiktokIcon.src = 'images/tiktok_icon.svg';
   tiktokIcon.alt = 'Location of cafe on map';
   tiktokLink.appendChild(tiktokIcon);
 
